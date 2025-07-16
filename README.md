@@ -43,29 +43,11 @@ docker run -d -p 8081:8080 resumebuilder
 # Open in your browser
 http://localhost:8081
 
-## Deployment on IBM Cloud
 
-Step 1: Login to IBM Cloud
-ibmcloud login --sso
 
-Step 2: Create Registry Namespace
-ibmcloud cr namespace-add ash-resume
 
-Step 3: Docker Authentication
-ibmcloud cr login
 
- Step 4: Tag and Push Image
-docker tag resumebuilder us.icr.io/ash-resume/resumebuilder
-docker push us.icr.io/ash-resume/resumebuilder
 
- Step 5: Deploy using Code Engine
-Go to IBM Cloud Console → Code Engine
-
-Create a new app from container image
-
-Enter: us.icr.io/ash-resume/resumebuilder
-
-Choose runtime settings and deploy
 
 
 
