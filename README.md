@@ -20,11 +20,11 @@ This project allows users to:
 - **Containerization:** Docker
 - **Cloud Deployment:** IBM Cloud (Code Engine, CLI, Container Registry)
 
-## ✨ Features
+##  Features
 
-- 🧾 Easy-to-use resume form interface
-- 👀 Live preview of resume while typing
-- 📥 One-click PDF download of the resume
+-  Easy-to-use resume form interface
+-  Live preview of resume while typing
+-  One-click PDF download of the resume
 
 ##  Project Structure
    Dockerfile # For building Docker image
