@@ -27,20 +27,45 @@ This project allows users to:
 ├── rb.html # Main HTML file with Tailwind CSS
 
 
-##  Run Locally with Docker
+---
 
-To build and run this project on your local machine using Docker:
+##  Run Locally & Deploy on IBM Cloud
+
+Use the following step-by-step commands to run locally with Docker and deploy to IBM Cloud:
 
 ```bash
-# Build the Docker image
+# Step 1: Build Docker image locally
 docker build -t resumebuilder .
 
-# Run the Docker container on port 8081
+# Step 2: Run the container locally on port 8081
 docker run -d -p 8081:8080 resumebuilder
 
-# Open in your browser
-http://localhost:8081
-bash'''
+# Step 3: Open in your browser
+# Visit: http://localhost:8081
+
+# Step 4: Login to IBM Cloud
+ibmcloud login --sso
+
+# Step 5: Create a container registry namespace (if not created already)
+ibmcloud cr namespace-add ash-resume
+
+# Step 6: Authenticate Docker with IBM Cloud
+ibmcloud cr login
+
+# Step 7: Tag the Docker image for IBM Container Registry
+docker tag resumebuilder us.icr.io/ash-resume/resumebuilder
+
+# Step 8: Push the image to IBM Cloud Container Registry
+docker push us.icr.io/ash-resume/resumebuilder
+
+# Step 9: Deploy on IBM Cloud using Code Engine
+# Go to: https://cloud.ibm.com/codeengine
+# - Create project
+# - Create app from container image
+# - Use image: us.icr.io/ash-resume/resumebuilder
+# - Set port to 8080 and deploy
+
+
 
 
 
