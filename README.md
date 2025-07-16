@@ -20,6 +20,12 @@ This project allows users to:
 - **Containerization:** Docker
 - **Cloud Deployment:** IBM Cloud (Code Engine, CLI, Container Registry)
 
+## ✨ Features
+
+- 🧾 Easy-to-use resume form interface
+- 👀 Live preview of resume while typing
+- 📥 One-click PDF download of the resume
+
 ##  Project Structure
    Dockerfile # For building Docker image
 ├── package.json # Project dependencies
@@ -29,7 +35,7 @@ This project allows users to:
 
 ---
 
-##  Run Locally & Deploy on IBM Cloud
+##  Run Locally with Docker & Deploy on IBM Cloud
 
 Use the following step-by-step commands to run locally with Docker and deploy to IBM Cloud:
 
