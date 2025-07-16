@@ -27,8 +27,6 @@ This project allows users to:
 ├── rb.html # Main HTML file with Tailwind CSS
 
 
----
-
 ##  Run Locally with Docker
 
 To build and run this project on your local machine using Docker:
@@ -42,6 +40,7 @@ docker run -d -p 8081:8080 resumebuilder
 
 # Open in your browser
 http://localhost:8081
+bash'''
 
 
 
