@@ -66,9 +66,19 @@ docker push us.icr.io/ash-resume/resumebuilder
 # - Set port to 8080 and deploy
 
 
+ Example Section in README.md:
+markdown
+Copy code
+## 🖼️ Screenshots
 
+### 📝 Resume Form Input
+![Form View](screenshots/form-view.png)
 
+### 👀 Live Resume Preview
+![Live Preview](screenshots/preview.png)
 
+### 📄 PDF Output
+![PDF Screenshot](screenshots/pdf.png)
 
 
 
